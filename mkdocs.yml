@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: BI-AAG
+site_url: https://Dzendys.github.io/aag_skripta
+repo_name: Dzendys/aag_skripta
+repo_url: https://github.com/Dzendys/aag_skripta
+theme:
+    name: material
+    features:
+        - content.code.copy
+        - navigation.footer
+        - navigation.indexes
+    icon:
+        repo: fontawesome/brands/git-alt
+        admonition:
+            note: material/alert
+    logo:
+        assets/logo.png
+    palette:
+        # Dark mode
+        -   scheme: slate
+            toggle:
+                icon: material/weather-sunny
+                name: Dark mode
+            primary: 4051B5
+            accent: 4051B5
+
+        # Light mode
+        -   scheme: default
+            toggle:
+                icon: material/weather-night
+                name: Light mode
+                primary: blue
+                accent: deep orange
+
+markdown_extensions:
+    - tables
+    - toc
+    - attr_list
+    - md_in_html
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.blocks.caption
+    -   pymdownx.superfences:
+            custom_fences:
+                -   name: mermaid
+                    class: mermaid
+                    format: !!python/name:pymdownx.superfences.fence_code_format
+    - admonition
+    - pymdownx.details
+    -   pymdownx.arithmatex:
+            generic: true
+    -   pymdownx.highlight:
+            anchor_linenums: true
+            line_spans: __span
+            pygments_lang_class: true
+            linenums: true
+
+
+extra_css:
+    - stylesheets/extra.css
+
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+    - search
+
+extra:
+    social:
+          - icon: fontawesome/brands/git-alt
+            link: https://github.com/Dzendys/aag_skripta
+
+          - icon: material/bug
+            link: https://github.com/Dzendys/aag_skripta/issues/new
+            name: Report an Issue
+
