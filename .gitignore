@@ -1,0 +1,4 @@
+.local
+mkdocs_env
+.idea
+venv
