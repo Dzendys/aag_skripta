@@ -81,8 +81,8 @@ Znázornění se liší způsobem zápisu přechodové funkce $\delta$:
 
 Vrcholy grafu reprezentují stavy (kolečko), dvojité kolečko označuje koncové stavy. Počáteční stav je označen příchozí hranou. Přechody mezi stavy jsou orientované hrany ohodnocené vstupními symboly.
 
-![Stavový diagram](../../assets/02/stavovy_diagram_white.png#only-dark){ align=center }
-![Stavový diagram](../../assets/02/stavovy_diagram_black.png#only-light){ align=center }
+![Stavový diagram](../../assets/02/stavovy_diagram_white.png#only-dark){ align=center width="60%" }
+![Stavový diagram](../../assets/02/stavovy_diagram_black.png#only-light){ align=center width="60%" }
 
 **3. Tabulka**
 
