@@ -52,4 +52,5 @@ P &= \{ A \to BC \mid AB \mid 1, \\
 a řetězec $w$ = `110100`. Vyplněná tabulka vypadá:
 
 
-![CYK tabulka](../../assets/03/cyk_priklad_tabulka.png){ align=center width=75% }
+![CYK tabulka](../../assets/03/cyk_priklad_tabulka_white.png#only-dark){ align=center width=75% }
+![CYK tabulka](../../assets/03/cyk_priklad_tabulka_black.png#only-light){ align=center width=75% }

@@ -21,7 +21,8 @@
 **Vysvětlení pumpující vlastnosti:**
 Neformálně řečeno, pro daný jazyk existuje potenciální konečný automat s $p$ stavy ($p \ge 1$) takový, že pro všechny věty $w$ z jazyka $L$ platí, že pokud $w$ má více či stejný počet symbolů jako je počet stavů KA, pak v automatu musí existovat cyklus.
 
-![Pumping lemma](../../assets/02/pumping_lemma.png){ align=center }
+![Pumping lemma](../../assets/02/pumping_lemma_white.png#only-dark){ align=center }
+![Pumping lemma](../../assets/02/pumping_lemma_black.png#only-light){ align=center }
 
 Neboli existuje rozdělení věty $w$ na tři části $x, y, z$ takové, že:
 

@@ -2,4 +2,5 @@
 
 Tato kapitola shrnuje algoritmické postupy pro převody mezi regulárními gramatikami (RG), regulárními výrazy (RV) a konečnými automaty (KA).
 
-![Převody](../../assets/02/prevody.png){ align=center width="50%" }
+![Převody](../../assets/02/prevody_white.png#only-dark){ align=center width="50%" }
+![Převody](../../assets/02/prevody_black.png#only-light){ align=center width="50%" }
