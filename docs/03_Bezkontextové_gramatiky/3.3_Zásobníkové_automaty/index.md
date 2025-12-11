@@ -31,8 +31,8 @@
     *   $Z_0 \in G$ je **počáteční symbol na zásobníku** (na počátku zásobník není prázdný),
     *   $F \subseteq Q$ je množina koncových stavů.
 
-    ![Zásobníkový automat](../../assets/03/zasobnikovy_automat_white.png#only-dark){ align="center" width="75%" }
-    ![Zásobníkový automat](../../assets/03/zasobnikovy_automat_black.png#only-light){ align="center" width="75%" }
+    ![Zásobníkový automat](../../assets/03/zasobnikovy_automat_white.png#only-dark){ width="75%" }
+    ![Zásobníkový automat](../../assets/03/zasobnikovy_automat_black.png#only-light){ width="75%" }
 
 ### Přechodová funkce a vizualizace
 
@@ -58,8 +58,8 @@ Definice přechodové funkce $\delta$ nám říká, že na základě aktuálníh
 
     **2. Ohodnocený orientovaný graf**
 
-    ![Stavový diagram](../../assets/03/stavový_diagram_white.png#only-dark){ align="center" }
-    ![Stavový diagram](../../assets/03/stavový_diagram_black.png#only-light){ align="center" }
+    ![Stavový diagram](../../assets/03/stavový_diagram_white.png#only-dark)
+    ![Stavový diagram](../../assets/03/stavový_diagram_black.png#only-light)
     
     Hrany jsou ohodnoceny trojicí `vstup, pop / push`.
 
@@ -99,31 +99,31 @@ Zatímco u konečných automatů byly deterministické a nedeterministické vari
     1.  **Liší se vstupním symbolem:**
         *   `a, ...` vs `b, ...` $\implies$ **Deterministické** (bez ohledu na zásobník).
         
-        ![Čtení symbolu](../../assets/03/za_cteni1_white.png#only-dark){ align="center" width="75%" }
-        ![Čtení symbolu](../../assets/03/za_cteni1_black.png#only-light){ align="center" width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni1_white.png#only-dark){ width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni1_black.png#only-light){ width="75%" }
 
     2.  **Stejný vstupní symbol** (nebo konflikt s $\varepsilon$), záleží na zásobníku:
         *   Odebírají **stejný symbol/řetězec**: $\implies$ **Nedeterministické**.
 
-        ![Čtení symbolu](../../assets/03/za_cteni2_white.png#only-dark){ align="center" width="75%" }
-        ![Čtení symbolu](../../assets/03/za_cteni2_black.png#only-light){ align="center" width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni2_white.png#only-dark){ width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni2_black.png#only-light){ width="75%" }
 
         *   Odebírají **různé symboly** (např. `a` vs `b`): $\implies$ **Deterministické**.
 
-        ![Čtení symbolu](../../assets/03/za_cteni3_white.png#only-dark){ align="center" width="75%" }
-        ![Čtení symbolu](../../assets/03/za_cteni3_black.png#only-light){ align="center" width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni3_white.png#only-dark){ width="75%" }
+        ![Čtení symbolu](../../assets/03/za_cteni3_black.png#only-light){ width="75%" }
 
         *   Odebírají **různé řetězce** (např. `ab` vs `a`):
 
             *   Pokud je jeden předponou druhého $\implies$ **Nedeterministické** (automat neví, zda číst dál).
 
-            ![Čtení symbolu](../../assets/03/za_cteni4_white.png#only-dark){ align="center" width="75%" }
-            ![Čtení symbolu](../../assets/03/za_cteni4_black.png#only-light){ align="center" width="75%" }
+            ![Čtení symbolu](../../assets/03/za_cteni4_white.png#only-dark){ width="75%" }
+            ![Čtení symbolu](../../assets/03/za_cteni4_black.png#only-light){ width="75%" }
 
             *   Pokud není žádný předponou druhého $\implies$ **Deterministické**.
 
-            ![Čtení symbolu](../../assets/03/za_cteni5_white.png#only-dark){ align="center" width="75%" }
-            ![Čtení symbolu](../../assets/03/za_cteni5_black.png#only-light){ align="center" width="75%" }
+            ![Čtení symbolu](../../assets/03/za_cteni5_white.png#only-dark){ width="75%" }
+            ![Čtení symbolu](../../assets/03/za_cteni5_black.png#only-light){ width="75%" }
 
 ---
 

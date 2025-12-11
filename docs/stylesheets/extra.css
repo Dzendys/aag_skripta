@@ -201,3 +201,8 @@ p {
         transform: translateY(-50%) rotate(0deg) !important;
     }
 }
+
+img[align="center"] {
+    display: block;
+    margin: 0 auto;
+}
