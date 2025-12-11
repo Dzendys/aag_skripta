@@ -1,5 +1,4 @@
-### Skripta
-Aktuálně není vyřešen deployment, takže si poraď sám
+### [Skripta](https://dzendys.github.io/aag_skripta/)
 
 ---
 
