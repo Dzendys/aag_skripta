@@ -33,3 +33,23 @@
         3.  Provedeme „kartézský součin“ těchto buněk. V gramatice hledáme neterminály, které mají na pravé straně některou z kombinací.
         4.  Posuneme **levou ruku** o jednu buňku vpravo a **pravou** o jednu buňku diagonálně vlevo dolů a opakujeme součin.
         5.  Opakujeme, dokud se ruce „nestřetnou“ (resp. dokud je možný posun).
+    
+    !!! Warning "Orientace tabulky"
+        V této metodě se tabulka vyplňuje zleva do prava. Jiná metoda může tabulku libovolně otočit a vyplňovat tudíž jiným směrem.
+
+---
+
+*Příklad:*
+Mějme gramatiku G zadanou jako:
+
+$$\begin{aligned}
+G &= (\{A, B, C\}, \{0, 1\}, P, A), \text{ kde} \\
+P &= \{ A \to BC \mid AB \mid 1, \\
+  &\phantom{=\{ } B \to AA \mid 0, \\
+  &\phantom{=\{ } C \to CB \mid 1 \mid 0 \}
+\end{aligned}$$
+
+a řetězec $w$ = `110100`. Vyplněná tabulka vypadá:
+
+
+![CYK tabulka](../../assets/03/cyk_priklad_tabulka.png){ align=center width=75% }

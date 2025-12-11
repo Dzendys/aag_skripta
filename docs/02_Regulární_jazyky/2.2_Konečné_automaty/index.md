@@ -15,6 +15,8 @@ Konečný automat (KA) je jednoduchý výpočetní model. Skládá se z **říd�
     * $q_0 \in Q$ je počáteční stav,
     * $F \subseteq Q$ je množina koncových stavů.
 
+    ![Konečný automat](../../assets/02/konecny_automat.png){ align=center width="75%" }
+
 ### Deterministický konečný automat (DKA)
 
 Deterministický konečný automat je neformálně řečeno takový konečný automat, který má vždy jasně dáno, jak ve výpočtu pokračovat (nemůže si vybrat z více možností).
@@ -78,21 +80,13 @@ Znázornění se liší způsobem zápisu přechodové funkce $\delta$:
 
 Vrcholy grafu reprezentují stavy (kolečko), dvojité kolečko označuje koncové stavy. Počáteční stav je označen příchozí hranou. Přechody mezi stavy jsou orientované hrany ohodnocené vstupními symboly.
 
+![Stavový diagram](../../assets/02/stavovy_diagram.png){ align=center }
+
 **3. Tabulka**
 
 Sloupce odpovídají stavům, řádky symbolům abecedy. Počáteční stav označíme $\to$, koncový $\leftarrow$.
 
-| $\delta_{\text{DKA}}$ | 0 | 1 |
-| :--- | :--- | :--- |
-| $\to S$ | $S$ | $A$ |
-| $A$ | $B$ | $A$ |
-| $\leftarrow B$ | – | – |
-
-| $\delta_{\text{NKA}}$ | 0 | 1 |
-| :--- | :--- | :--- |
-| $\to S$ | $S$ | $S, A$ |
-| $A$ | $B$ | |
-| $\leftarrow B$ | | |
+![Tabulka přechodů](../../assets/02/tabulka_prechodu.png){ align=center }
 
 *Poznámka:* U NKA vynecháváme množinové závorky. Prázdnou množinu (nebo nedefinovaný přechod u DKA) značíme prázdnou buňkou nebo pomlčkou.
 
