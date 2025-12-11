@@ -10,8 +10,8 @@
     $$ \text{regulární jazyk} \implies \text{pumpující vlastnost} $$
 
     **Formálně:**
-    Nechť $L$ je regulární jazyk $\implies$
-    $(\exists p \ge 1)(\forall w \in L) [|w| \ge p \implies (\exists x, y, z \in \Sigma^*) (w = xyz \land |xy| \le p \land |y| \ge 1 \land (\forall k \ge 0) xy^kz \in L)]$
+
+    $$\text{Nechť $L$ je regulární jazyk} \implies (\exists p \ge 1)(\forall w \in L) [|w| \ge p \implies (\exists x, y, z \in \Sigma^*) (w = xyz \land |xy| \le p \land |y| \ge 1 \land (\forall k \ge 0) xy^kz \in L)]$$
 
 !!! Warning "Pozor!"
     Obrácená implikace neplatí! Tedy: $\text{pumpující vlastnost} \nRightarrow \text{regulární jazyk}$.
