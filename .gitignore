@@ -1,4 +1,2 @@
-.local
-mkdocs_env
-.idea
 venv
+magick
