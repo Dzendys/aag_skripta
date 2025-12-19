@@ -65,6 +65,12 @@ p {
     }
 }
 
+.md-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .md-content__inner {
     margin-bottom: 64px !important;
 }
@@ -200,9 +206,4 @@ p {
         top: 50% !important;
         transform: translateY(-50%) rotate(0deg) !important;
     }
-}
-
-img[align="center"] {
-    display: block;
-    margin: 0 auto;
 }
