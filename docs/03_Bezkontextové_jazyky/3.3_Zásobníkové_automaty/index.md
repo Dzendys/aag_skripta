@@ -70,6 +70,39 @@ Definice přechodové funkce $\delta$ nám říká, že na základě aktuálníh
 
 ---
 
+### Konfigurace a výpočet
+
+<a id="def-konfigurace-za"></a>
+!!! Definition "Definice (Konfigurace zásobníkového automatu)"
+
+    ### Konfigurace zásobníkového automatu {#def-konfigurace-za}
+
+    Nechť $R = (Q, \Sigma, G, \delta, q_0, Z_0, F)$ je zásobníkový automat. **Konfigurace** zásobníkového automatu $R$ je trojice $(q, w, \alpha) \in Q \times \Sigma^* \times G^*$.
+
+    *   $q$ je aktuální stav,
+    *   $w$ je dosud nezpracovaná část vstupního řetězce,
+    *   $\alpha$ je obsah zásobníku.
+
+    *   $(q_0, w, Z_0)$ je **počáteční konfigurace**.
+    *   $(q, \varepsilon, \alpha)$, kde $q \in F$, je **přijímající konfigurace** (pro přijetí přechodem do koncového stavu).
+
+Konfigurace popisuje kompletní stav výpočtu v daném okamžiku.
+
+<a id="def-prechod-za"></a>
+!!! Definition "Definice (Přechod v ZA)"
+
+    ### Přechod v ZA (Krok výpočtu) {#def-prechod-za}
+
+    Nechť $R = (Q, \Sigma, G, \delta, q_0, Z_0, F)$ je zásobníkový automat. Relaci přechodu $\vdash_R$ definujeme takto:
+
+    $$
+    (q, aw, \alpha\beta) \vdash_R (p, w, \gamma\beta) \iff (p, \gamma) \in \delta(q, a, \alpha)
+    $$
+
+    Kde $a \in \Sigma \cup \{\varepsilon\}, w \in \Sigma^*, \alpha, \beta, \gamma \in G^*$.
+    
+    *(Předpokládáme vrchol zásobníku vlevo).*
+
 ### Deterministický vs. Nedeterministický ZA
 
 Zatímco u konečných automatů byly deterministické a nedeterministické varianty ekvivalentní, u zásobníkových automatů to **neplatí**.
@@ -133,8 +166,13 @@ Definujeme na základě typu přijetí. Tyto dva způsoby jsou **výpočetně ek
 
 1.  **ZA přijímající přechodem do koncového stavu:**
     Přijme, pokud přečte celý vstup a skončí ve stavu $q \in F$. (Obsah zásobníku není podstatný).
+    
+    $$ L(R) = \{ w \in \Sigma^* \mid \exists q \in F, \gamma \in G^* : (q_0, w, Z_0) \vdash_R^* (q, \varepsilon, \gamma) \} $$
+
 2.  **ZA přijímající s prázdným zásobníkem:**
     Přijme, pokud přečte celý vstup a zásobník je prázdný. (Stav, ve kterém skončí, není podstatný).
+
+    $$ L_\varepsilon(R) = \{ w \in \Sigma^* \mid \exists q \in Q : (q_0, w, Z_0) \vdash_R^* (q, \varepsilon, \varepsilon) \} $$
 
 <a id="note-prijeti-neprijeti"></a>
 !!! Implication "Kdy automat (ne)přijme vstupní řetězec?"

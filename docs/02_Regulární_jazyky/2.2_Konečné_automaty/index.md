@@ -102,28 +102,82 @@ Sloupce odpovídají stavům, řádky symbolům abecedy. Počáteční stav ozna
 
 ---
 
+### Konfigurace a výpočet automatu
+
+Pro formální popis výpočtu automatu zavádíme pojmy **konfigurace** a **krok výpočtu** (přechod).
+
+<a id="def-konfigurace-ka"></a>
+!!! Definition "Definice (Konfigurace konečného automatu)"
+
+    ### Konfigurace konečného automatu {#def-konfigurace-ka}
+
+    Nechť $M = (Q, \Sigma, \delta, q_0, F)$ je konečný automat. **Konfigurace** konečného automatu $M$ je dvojice $(q, w) \in Q \times \Sigma^*$.
+
+    *   $(q_0, w)$ nazveme **počáteční konfigurací** konečného automatu $M$ pro vstupní řetězec $w$.
+    *   $(q, \varepsilon)$, kde $q \in F$, nazveme **přijímající konfigurací** konečného automatu $M$.
+
+Konfigurace popisuje aktuální stav výpočtu: automat se nachází ve stavu $q$ a na vstupu mu zbývá přečíst řetězec $w$.
+
+<a id="def-prechod-ka"></a>
+!!! Definition "Definice (Přechod v automatu)"
+
+    ### Přechod v automatu (Krok výpočtu) {#def-prechod-ka}
+
+    Nechť $M = (Q, \Sigma, \delta, q_0, F)$ je konečný automat. Relaci přechodu $\vdash_M$ nad $Q \times \Sigma^*$ definujeme následovně:
+
+    *   **Pro DKA:** $(q, aw) \vdash_M (p, w)$ právě tehdy, když $\delta(q, a) = p$.
+    *   **Pro NKA:** $(q, aw) \vdash_M (p, w)$ právě tehdy, když $p \in \delta(q, a)$.
+
+    *(Kde $a \in \Sigma, w \in \Sigma^*$.)*
+
+    Používáme také:
+
+    *   $\vdash_M^k$ pro $k$-tý krok výpočtu.
+    *   $\vdash_M^*$ pro reflexivní a tranzitivní uzávěr relace (nula nebo více kroků).
+    *   $\vdash_M^+$ pro tranzitivní uzávěr relace (jeden nebo více kroků).
+
 ### Přijímání řetězců
 
-!!! Implication "Kdy DKA (ne)přijme vstupní řetězec?"
+<a id="def-prijimani-dka"></a>
+!!! Definition "Definice (Řetězec přijímaný DKA)"
 
-    **DKA přijme** vstupní řetězec, pokud jej celý přečte a skončí v některém z koncových stavů.
+    ### Řetězec přijímaný DKA {#def-prijimani-dka}
 
-    **DKA nepřijme** vstupní řetězec, pokud:
+    Řekneme, že řetězec $w \in \Sigma^*$ je **přijímán** deterministickým konečným automatem $M = (Q, \Sigma, \delta, q_0, F)$, jestliže existuje $q \in F$ takové, že:
 
-    * řetězec je celý přečten a automat skončí v nekoncovém stavu,
-    * během čtení řetězce dojde k chybě (nedefinovaná přechodová funkce).
+    $$
+    (q_0, w) \vdash_M^* (q, \varepsilon)
+    $$
 
-!!! Implication "Kdy NKA (ne)přijme vstupní řetězec?"
+DKA tedy přijme vstupní řetězec, pokud jej celý přečte a skončí v některém z koncových stavů.
 
-    **NKA přijme** vstupní řetězec, pokud v automatu existuje **alespoň jedna** posloupnost přechodů, kdy je přečten celý řetězec a výpočet skončí v některém z koncových stavů.
+<a id="def-prijimani-nka"></a>
+!!! Definition "Definice (Řetězec přijímaný NKA)"
 
-    **NKA nepřijme** vstupní řetězec, pokud neexistuje žádná posloupnost přechodů vedoucí k přijetí (všechny větve výpočtu skončí v nekoncovém stavu nebo zaseknutím).
+    ### Řetězec přijímaný NKA {#def-prijimani-nka}
+
+    Řekneme, že řetězec $w \in \Sigma^*$ je **přijímán** nedeterministickým konečným automatem $M = (Q, \Sigma, \delta, q_0, F)$, jestliže existuje $q \in F$ takové, že:
+
+    $$
+    \exists (q_0, w) \vdash_M^* (q, \varepsilon)
+    $$
+
+NKA tedy přijme vstupní řetězec, pokud v automatu existuje **alespoň jedna** posloupnost přechodů, kdy je přečten celý řetězec a výpočet skončí v některém z koncových stavů.
+
+!!! Implication "Kdy automat nepřijme?"
+
+    *   **DKA nepřijme** vstupní řetězec, pokud řetězec je celý přečten a automat skončí v nekoncovém stavu, nebo pokud během čtení řetězce dojde k chybě (nedefinovaná přechodová funkce).
+    *   **NKA nepřijme** vstupní řetězec, pokud neexistuje žádná posloupnost přechodů vedoucí k přijetí (všechny větve výpočtu skončí v nekoncovém stavu nebo zaseknutím).
 
 <a id="def-jazyk-ka"></a>
 !!! Definition "Definice (Jazyk přijímaný KA)"
 
     ### Jazyk přijímaný KA {#def-jazyk-ka}
 
-    **Jazyk přijímaný konečným automatem** definujeme jako množinu všech řetězců, které automat přijímá.
+    **Jazyk přijímaný konečným automatem** $M$ (značíme $L(M)$) je množina všech řetězců, které automat přijímá.
+
+    $$
+    L(M) = \{ w \in \Sigma^* \mid \exists q \in F : (q_0, w) \vdash_M^* (q, \varepsilon) \}
+    $$
 
     Dva konečné automaty nazveme **ekvivalentní** právě tehdy, když přijímají stejný jazyk.
