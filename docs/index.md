@@ -13,7 +13,7 @@
     Berte tyto skripta s rezervou a **ověřujte** si aktuální znění definic dle slajdů z courses. Během let se navíc definice mohou mírně měnit. To platí i pro Lecture Notes a cvičebnici, ze kterých skripta vycházejí.
 
 
-Mezi tyto odlišnosti patří například neprázdnost abeced u gramatik a automatů nebo přijímání řetězců u Turingových strojů, kde páska (ne)musí být prázdná.
+Mezi tyto odlišnosti patří například neprázdnost abeced a automatů nebo přijímání řetězců u Turingových strojů, kde páska (ne)musí být prázdná.
 
 ### Shoutout
 
