@@ -26,7 +26,7 @@
     *   $Q$ je konečná neprázdná množina stavů,
     *   $\Sigma$ je konečná neprázdná vstupní abeceda,
     *   $G$ je konečná **abeceda zásobníku**,
-    *   $\delta$ je přechodová funkce (zobrazení z $Q \times (\Sigma \cup \{\varepsilon\}) \times G*$ do množiny konečných podmnožin množiny $Q \times G^*$),
+    *   $\delta$ je přechodová funkce (zobrazení z $Q \times (\Sigma \cup \{\varepsilon\}) \times G^*$ do množiny konečných podmnožin množiny $Q \times G^*$),
     *   $q_0 \in Q$ je počáteční stav,
     *   $Z_0 \in G$ je **počáteční symbol na zásobníku** (na počátku zásobník není prázdný),
     *   $F \subseteq Q$ je množina koncových stavů.
