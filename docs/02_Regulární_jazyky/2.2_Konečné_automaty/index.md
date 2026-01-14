@@ -10,7 +10,7 @@ Konečný automat (KA) je jednoduchý výpočetní model. Skládá se z **říd�
     Formálně definujeme konečný automat jako uspořádanou pětici $M = (Q, \Sigma, \delta, q_0, F)$, kde:
 
     * $Q$ je konečná neprázdná množina stavů,
-    * $\Sigma$ je konečná vstupní abeceda,
+    * $\Sigma$ je konečná neprázdná vstupní abeceda,
     * $\delta$ je přechodová funkce (definice viz níže dle typu automatu),
     * $q_0 \in Q$ je počáteční stav,
     * $F \subseteq Q$ je množina koncových stavů.

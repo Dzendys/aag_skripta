@@ -24,8 +24,8 @@
     **Nedeterministický zásobníkový automat** (NZA) definujeme jako uspořádanou sedmici $R = (Q, \Sigma, G, \delta, q_0, Z_0, F)$, kde:
 
     *   $Q$ je konečná neprázdná množina stavů,
-    *   $\Sigma$ je konečná vstupní abeceda,
-    *   $G$ je konečná neprázdná **abeceda zásobníku**,
+    *   $\Sigma$ je konečná neprázdná vstupní abeceda,
+    *   $G$ je konečná **abeceda zásobníku**,
     *   $\delta$ je přechodová funkce (zobrazení z $Q \times (\Sigma \cup \{\varepsilon\}) \times G$ do množiny konečných podmnožin množiny $Q \times G^*$),
     *   $q_0 \in Q$ je počáteční stav,
     *   $Z_0 \in G$ je **počáteční symbol na zásobníku** (na počátku zásobník není prázdný),
