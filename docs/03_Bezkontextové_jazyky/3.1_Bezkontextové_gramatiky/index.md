@@ -1,7 +1,7 @@
 # 3.1 Bezkontextové gramatiky
 
 <a id="def-bezkontextova-gramatika"></a>
-!!! Definition "Definice (Bezkontextová gramatika)"
+!!! Definition "[Definice (Bezkontextová gramatika)](#def-bezkontextova-gramatika)"
 
     ### Bezkontextová gramatika {#def-bezkontextova-gramatika}
 

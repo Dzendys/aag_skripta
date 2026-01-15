@@ -1,7 +1,7 @@
 # 2.3 Regulární výrazy
 
 <a id="def-regularni-vyraz"></a>
-!!! Definition "Definice (Regulární výraz)"
+!!! Definition "[Definice (Regulární výraz)](#def-regularni-vyraz)"
 
     ### Regulární výraz {#def-regularni-vyraz}
 
@@ -14,7 +14,7 @@
     *   Místo $x \cdot y$ budeme často psát jen $xy$.
 
 <a id="def-hodnota-rv"></a>
-!!! Definition "Definice (Hodnota regulárního výrazu)"
+!!! Definition "[Definice (Hodnota regulárního výrazu)](#def-hodnota-rv)"
 
     ### Hodnota regulárního výrazu {#def-hodnota-rv}
 

@@ -11,7 +11,7 @@ Tato třída jazyků **je uzavřená** pro operace: sjednocení, průnik, zřet�
 Existuje ještě jedna množina formálních jazyků, která obsahuje všechny jazyky kontextové, ale neobsahuje všechny jazyky rekurzivně spočetné. Této množině se říká **rekurzivní jazyky**. Třída rekurzivních jazyků je **uzavřená pro všechny** námi definované operace (sjednocení, průnik, rozdíl, doplněk, zřetězení, iterace).
 
 <a id="def-rekurzivni-jazyk"></a>
-!!! Definition "Definice (Rekurzivní jazyk)"
+!!! Definition "[Definice (Rekurzivní jazyk)](#def-rekurzivni-jazyk)"
 
     ### Rekurzivní jazyk {#def-rekurzivni-jazyk}
 

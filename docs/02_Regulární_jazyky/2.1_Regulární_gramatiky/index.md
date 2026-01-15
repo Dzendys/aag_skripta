@@ -1,7 +1,7 @@
 # 2.1 Regulární gramatiky
 
 <a id="def-regularni-gramatika"></a>
-!!! Definition "Regulární gramatika"
+!!! Definition "[Regulární gramatika](#def-regularni-gramatika)"
 
     ### Regulární gramatika {#def-regularni-gramatika}
 

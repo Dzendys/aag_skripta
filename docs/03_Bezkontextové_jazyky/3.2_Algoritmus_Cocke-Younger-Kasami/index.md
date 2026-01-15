@@ -1,7 +1,7 @@
 # 3.2 Algoritmus Cocke-Younger-Kasami
 
 <a id="algo-cyk"></a>
-!!! Algorithm "Algoritmus Cocke-Younger-Kasami (CYK)"
+!!! Algorithm "[Algoritmus Cocke-Younger-Kasami (CYK)](#algo-cyk)"
 
     ### Algoritmus CYK {#algo-cyk}
 

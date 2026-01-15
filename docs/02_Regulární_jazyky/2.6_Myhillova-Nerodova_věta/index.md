@@ -1,7 +1,7 @@
 # 2.6 Myhillova-Nerodova věta
 
 <a id="def-prava-kongruence"></a>
-!!! Definition "Definice (Pravá kongruence)"
+!!! Definition "[Definice (Pravá kongruence)](#def-prava-kongruence)"
 
     ### Pravá kongruence {#def-prava-kongruence}
 
@@ -12,14 +12,14 @@
     $$
 
 <a id="def-konecny-index"></a>
-!!! Definition "Definice (Konečný index)"
+!!! Definition "[Definice (Konečný index)](#def-konecny-index)"
 
     ### Konečný index {#def-konecny-index}
 
     Pravá kongruence $\sim$ je **konečného indexu**, má-li rozklad $\Sigma^* / \sim$ konečně mnoho tříd.
 
 <a id="def-prefixova-ekvivalence"></a>
-!!! Definition "Definice (Prefixová ekvivalence)"
+!!! Definition "[Definice (Prefixová ekvivalence)](#def-prefixova-ekvivalence)"
 
     ### Prefixová ekvivalence {#def-prefixova-ekvivalence}
 
@@ -30,7 +30,7 @@
     $$
 
 <a id="theorem-myhill-nerode"></a>
-!!! Theorem "Věta 2.1 (Myhillova-Nerodova věta)"
+!!! Theorem "[Věta 2.1 (Myhillova-Nerodova věta)](#theorem-myhill-nerode)"
 
     ### Myhillova-Nerodova věta {#theorem-myhill-nerode}
 

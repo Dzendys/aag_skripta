@@ -1,7 +1,7 @@
 # 4 Formální překlady
 
 <a id="def-formalni-preklad"></a>
-!!! Definition "Definice (Formální překlad)"
+!!! Definition "[Definice (Formální překlad)](#def-formalni-preklad)"
 
     ### Formální překlad {#def-formalni-preklad}
 
@@ -14,7 +14,7 @@
 Formální překlad tak přiřazuje řetězcům z jazyka $L$ (definiční obor) řetězce (překlady) z jazyka $V$ (obor hodnot).
 
 <a id="def-jednoznacny-preklad"></a>
-!!! Definition "Definice (Jednoznačný formální překlad)"
+!!! Definition "[Definice (Jednoznačný formální překlad)](#def-jednoznacny-preklad)"
 
     ### Jednoznačný formální překlad {#def-jednoznacny-preklad}
 

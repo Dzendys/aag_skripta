@@ -1,7 +1,7 @@
 # 3.3 Zásobníkové automaty
 
 <a id="def-zasobnik"></a>
-!!! Definition "Definice (Zásobník)"
+!!! Definition "[Definice (Zásobník)](#def-zasobnik)"
 
     ### Zásobník {#def-zasobnik}
 
@@ -17,7 +17,7 @@
     *   **Zásobníkový automat** může k ukládání informací využít jak stavy, tak zásobník. Informací si tak může ukládat teoreticky nekonečně mnoho.
 
 <a id="def-nza"></a>
-!!! Definition "Definice (Nedeterministický zásobníkový automat)"
+!!! Definition "[Definice (Nedeterministický zásobníkový automat)](#def-nza)"
 
     ### Nedeterministický zásobníkový automat {#def-nza}
 
@@ -48,7 +48,7 @@ Definice přechodové funkce $\delta$ nám říká, že na základě aktuálníh
 
 
 <a id="note-znazorneni-prechodu"></a>
-!!! Implication "Možnosti znázornění přechodu"
+!!! Implication "[Možnosti znázornění přechodu](#note-znazorneni-prechodu)"
 
     **1. Formální zápis**
     
@@ -73,7 +73,7 @@ Definice přechodové funkce $\delta$ nám říká, že na základě aktuálníh
 ### Konfigurace a výpočet
 
 <a id="def-konfigurace-za"></a>
-!!! Definition "Definice (Konfigurace zásobníkového automatu)"
+!!! Definition "[Definice (Konfigurace zásobníkového automatu)](#def-konfigurace-za)"
 
     ### Konfigurace zásobníkového automatu {#def-konfigurace-za}
 
@@ -89,7 +89,7 @@ Definice přechodové funkce $\delta$ nám říká, že na základě aktuálníh
 Konfigurace popisuje kompletní stav výpočtu v daném okamžiku.
 
 <a id="def-prechod-za"></a>
-!!! Definition "Definice (Přechod v ZA)"
+!!! Definition "[Definice (Přechod v ZA)](#def-prechod-za)"
 
     ### Přechod v ZA (Krok výpočtu) {#def-prechod-za}
 
@@ -111,7 +111,7 @@ Zatímco u konečných automatů byly deterministické a nedeterministické vari
 *   **Deterministický ZA (DZA):** Rozpoznává vlastní podmnožinu bezkontextových jazyků (větší než regulární, ale menší než všechny bezkontextové).
 
 <a id="def-dza"></a>
-!!! Definition "Definice (Deterministický zásobníkový automat)"
+!!! Definition "[Definice (Deterministický zásobníkový automat)](#def-dza)"
 
     ### Deterministický zásobníkový automat {#def-dza}
 
@@ -125,7 +125,7 @@ Zatímco u konečných automatů byly deterministické a nedeterministické vari
         *   Tj. nesmí nastat konflikt mezi čtením symbolu a $\varepsilon$-přechodem.
 
 <a id="note-analyza-determinismu"></a>
-!!! Implication "Analýza determinismu přechodů"
+!!! Implication "[Analýza determinismu přechodů](#note-analyza-determinismu)"
 
     Pojďme si rozebrat případy, kdy je automat deterministický a kdy ne:
 
@@ -175,7 +175,7 @@ Definujeme na základě typu přijetí. Tyto dva způsoby jsou **výpočetně ek
     $$ L_\varepsilon(R) = \{ w \in \Sigma^* \mid \exists q \in Q : (q_0, w, Z_0) \vdash_R^* (q, \varepsilon, \varepsilon) \} $$
 
 <a id="note-prijeti-neprijeti"></a>
-!!! Implication "Kdy automat (ne)přijme vstupní řetězec?"
+!!! Implication "[Kdy automat (ne)přijme vstupní řetězec?](#note-prijeti-neprijeti)"
 
     **Deterministický ZA (DZA)**
     

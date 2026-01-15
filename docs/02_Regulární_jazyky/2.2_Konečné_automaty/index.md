@@ -3,7 +3,7 @@
 Konečný automat (KA) je jednoduchý výpočetní model. Skládá se z **řídící jednotky** (stavy a přechodová funkce), **read-only vstupní pásky** rozdělené do buněk a **čtecí hlavy**, která čte jednotlivé symboly na pásce. Na počátku se automat nachází v počátečním stavu a čtecí hlava ukazuje na první symbol na pásce. V každém kroku automat přečte příslušný symbol a na základě něj a aktuálního stavu se přesune do stavu dalšího. Čtecí hlava se poté posune o jednu pozici vpravo na následující symbol a celý proces se opakuje, dokud jsou na vstupu nějaké nepřečtené symboly.
 
 <a id="def-ka"></a>
-!!! Definition "Definice (Konečný automat)"
+!!! Definition "[Definice (Konečný automat)](#def-ka)"
 
     ### Konečný automat {#def-ka}
 
@@ -23,7 +23,7 @@ Konečný automat (KA) je jednoduchý výpočetní model. Skládá se z **říd�
 Deterministický konečný automat je neformálně řečeno takový konečný automat, který má vždy jasně dáno, jak ve výpočtu pokračovat (nemůže si vybrat z více možností).
 
 <a id="def-dka"></a>
-!!! Definition "Definice (Deterministický konečný automat)"
+!!! Definition "[Definice (Deterministický konečný automat)](#def-dka)"
 
     ### Deterministický konečný automat {#def-dka}
 
@@ -42,7 +42,7 @@ Deterministický konečný automat, jenž má přechodovou funkci $\delta$ defin
 Nedeterministický konečný automat se vyznačuje tím, že si lze v nějaké fázi výpočtu vybrat, jak pokračovat.
 
 <a id="def-nka"></a>
-!!! Definition "Definice (Nedeterministický konečný automat)"
+!!! Definition "[Definice (Nedeterministický konečný automat)](#def-nka)"
 
     ### Nedeterministický konečný automat {#def-nka}
 
@@ -94,7 +94,7 @@ Sloupce odpovídají stavům, řádky symbolům abecedy. Počáteční stav ozna
 *Poznámka:* U NKA vynecháváme množinové závorky. Prázdnou množinu (nebo nedefinovaný přechod u DKA) značíme prázdnou buňkou nebo pomlčkou.
 
 <a id="def-homogenni-ka"></a>
-!!! Definition "Definice (Homogenní konečný automat)"
+!!! Definition "[Definice (Homogenní konečný automat)](#def-homogenni-ka)"
 
     ### Homogenní konečný automat {#def-homogenni-ka}
 
@@ -107,7 +107,7 @@ Sloupce odpovídají stavům, řádky symbolům abecedy. Počáteční stav ozna
 Pro formální popis výpočtu automatu zavádíme pojmy **konfigurace** a **krok výpočtu** (přechod).
 
 <a id="def-konfigurace-ka"></a>
-!!! Definition "Definice (Konfigurace konečného automatu)"
+!!! Definition "[Definice (Konfigurace konečného automatu)](#def-konfigurace-ka)"
 
     ### Konfigurace konečného automatu {#def-konfigurace-ka}
 
@@ -119,7 +119,7 @@ Pro formální popis výpočtu automatu zavádíme pojmy **konfigurace** a **kro
 Konfigurace popisuje aktuální stav výpočtu: automat se nachází ve stavu $q$ a na vstupu mu zbývá přečíst řetězec $w$.
 
 <a id="def-prechod-ka"></a>
-!!! Definition "Definice (Přechod v automatu)"
+!!! Definition "[Definice (Přechod v automatu)](#def-prechod-ka)"
 
     ### Přechod v automatu (Krok výpočtu) {#def-prechod-ka}
 
@@ -139,7 +139,7 @@ Konfigurace popisuje aktuální stav výpočtu: automat se nachází ve stavu $q
 ### Přijímání řetězců
 
 <a id="def-prijimani-dka"></a>
-!!! Definition "Definice (Řetězec přijímaný DKA)"
+!!! Definition "[Definice (Řetězec přijímaný DKA)](#def-prijimani-dka)"
 
     ### Řetězec přijímaný DKA {#def-prijimani-dka}
 
@@ -152,7 +152,7 @@ Konfigurace popisuje aktuální stav výpočtu: automat se nachází ve stavu $q
 DKA tedy přijme vstupní řetězec, pokud jej celý přečte a skončí v některém z koncových stavů.
 
 <a id="def-prijimani-nka"></a>
-!!! Definition "Definice (Řetězec přijímaný NKA)"
+!!! Definition "[Definice (Řetězec přijímaný NKA)](#def-prijimani-nka)"
 
     ### Řetězec přijímaný NKA {#def-prijimani-nka}
 
@@ -170,7 +170,7 @@ NKA tedy přijme vstupní řetězec, pokud v automatu existuje **alespoň jedna*
     *   **NKA nepřijme** vstupní řetězec, pokud neexistuje žádná posloupnost přechodů vedoucí k přijetí (všechny větve výpočtu skončí v nekoncovém stavu nebo zaseknutím).
 
 <a id="def-jazyk-ka"></a>
-!!! Definition "Definice (Jazyk přijímaný KA)"
+!!! Definition "[Definice (Jazyk přijímaný KA)](#def-jazyk-ka)"
 
     ### Jazyk přijímaný KA {#def-jazyk-ka}
 

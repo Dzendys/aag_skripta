@@ -1,7 +1,7 @@
 # 2.5 Pumping lemma
 
 <a id="def-pumping-lemma"></a>
-!!! Theorem "Pumping lemma (pro regulární jazyky)"
+!!! Theorem "[Pumping lemma (pro regulární jazyky)](#def-pumping-lemma)"
 
     ### Pumping lemma {#def-pumping-lemma}
 
