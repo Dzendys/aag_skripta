@@ -26,3 +26,25 @@
     4. $h(x + y) = h(x) \cup h(y)$,
     5. $h(x \cdot y) = h(x) \cdot h(y)$,
     6. $h(x^*) = (h(x))^*$.
+
+<a id="def-ekvivalence-rv"></a>
+!!! Definition "[Definice (Identické, ekvivalentní a podobné regulární výrazy)](#def-ekvivalence-rv)"
+
+    ### Identické, ekvivalentní a podobné r.v. {#def-ekvivalence-rv}
+
+    Regulární výrazy $x, y$ nazveme **identické** (označíme $x \equiv y$), jestliže $x$ a $y$ jsou úplně stejné řetězce symbolů.
+
+    Regulární výrazy $x, y$ nazveme **ekvivalentní** (označíme $x = y$), jestliže mají stejný jazyk, tj. $L(x) = L(y)$. To znamená, že regulární množiny, které tyto výrazy popisují, jsou stejné.
+
+    Regulární výrazy $x, y$ nazveme **podobné** (označíme $x \cong y$), jestliže se dají na sebe převést pomocí následujících identit:
+
+    $$
+    \begin{aligned}
+    A_1 &: x + x = x \\
+    A_2 &: x + y = y + x \\
+    A_3 &: (x + y) + z = x + (y + z) \\
+    A_4 &: x + \emptyset = x \\
+    A_5 &: x \cdot \emptyset = \emptyset \cdot x = \emptyset \\
+    A_6 &: x \cdot \varepsilon = \varepsilon \cdot x = x
+    \end{aligned}
+    $$
