@@ -15,8 +15,14 @@
 
 !!! Warning "Pozor!"
     Obrácená implikace neplatí! Tedy: $\text{pumpující vlastnost} \nRightarrow \text{regulární jazyk}$.
-
+ 
     To znamená, že pokud jazyk splňuje podmínky pumping lemmatu, nemusí být nutně regulární. Pumping lemma se proto používá především k **důkazu neregularity** jazyka (pomocí obměny implikace).
+
+    *Příklad neregulárního jazyka, který splňuje podmínky Pumping lemmatu:*
+
+    $$
+    L = \{u \in \{a, b, c\}^* \mid u = a^+ b^i c^i \lor u = b^i c^j, \; i \ge 0, j \ge 0\}
+    $$
 
 **Vysvětlení pumpující vlastnosti:**
 Neformálně řečeno, pro daný jazyk existuje potenciální konečný automat s $p$ stavy ($p \ge 1$) takový, že pro všechny věty $w$ z jazyka $L$ platí, že pokud $w$ má více či stejný počet symbolů jako je počet stavů KA, pak v automatu musí existovat cyklus.
