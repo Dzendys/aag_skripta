@@ -21,11 +21,13 @@ python3 -m venv venv # vytvoří virtuální prostředí Pythonu
 source venv/bin/activate # aktivuje ho
 pip install mkdocs-material
 ```
+
 5. Spusťte aplikaci:
 ```bash
 cd {složka vašeho forku obsahující soubor mkdocs.yml}
 mkdocs serve
 ```
+
 6. Otevřete webový prohlížeč a zadejte adresu http://127.0.0.1:8000/
 
 ---
