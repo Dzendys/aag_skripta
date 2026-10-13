@@ -35,7 +35,36 @@ Deterministický konečný automat je neformálně řečeno takový konečný au
 
 Přechodová funkce $\delta$ může být i **parciální**. To znamená, že $\delta$ není definována pro všechny dvojice stavů $q \in Q$ a vstupních symbolů $a \in \Sigma$. Pokud se automat dostane do situace, kdy pro daný stav a symbol na vstupu nemá definován přechod, vstup **nepřijme a skončí s chybou**.
 
-Deterministický konečný automat, jenž má přechodovou funkci $\delta$ definovanou pro všechny dvojice stavů $q \in Q$ a vstupních symbolů $a \in \Sigma$, se nazývá **úplně určený DKA**.
+<a id="def-pohlcujici-mrtvy-stav"></a>
+!!! Definition "[Definice (Pohlcující a mrtvý stav)](#def-pohlcujici-mrtvy-stav)"
+
+    ### Pohlcující a mrtvý stav {#def-pohlcujici-mrtvy-stav}
+
+    Nechť $M = (Q, \Sigma, \delta, q_0, F)$ je konečný automat.
+
+    *   **Pohlcující stav:** Stav $q \in Q$ nazveme pohlcující, pokud pro všechny vstupní symboly $a \in \Sigma$ platí $\delta(q, a) = q$. (Z tohoto stavu již není úniku.)
+    *   **Mrtvý stav:** Stav $q \in Q$ nazveme mrtvý, pokud neexistuje řetězec $w \in \Sigma^*$ takový, že $(q, w) \vdash_M^* (q_f, \varepsilon)$ pro nějaké $q_f \in F$. (Vstupem do tohoto stavu již nelze přijmout vstupní řetězec.)
+
+<a id="def-uplne-urceny-dka"></a>
+!!! Definition "[Definice (Úplně určený DKA)](#def-uplne-urceny-dka)"
+
+    ### Úplně určený DKA {#def-uplne-urceny-dka}
+
+    Deterministický konečný automat $M = (Q, \Sigma, \delta, q_0, F)$ nazveme **úplně určený**, když zobrazení $\delta(q, a)$ je definováno pro všechny dvojice stavů $q \in Q$ a vstupních symbolů $a \in \Sigma$.
+
+<a id="algo-doplneni-dka"></a>
+!!! Algorithm "[Algoritmus doplnění DKA na úplně určený](#algo-doplneni-dka)"
+
+    ### Doplnění DKA na úplně určený {#algo-doplneni-dka}
+
+    Vstup: DKA $M = (Q, \Sigma, \delta, q_0, F)$.  
+    Výstup: Úplně určený DKA $M' = (Q', \Sigma, \delta', q_0, F)$ takový, že $L(M') = L(M)$.
+
+    1. Přidáme nový mrtvý pohlcující stav $q_\emptyset \notin Q$: $Q' \leftarrow Q \cup \{q_\emptyset\}$.
+    2. Pro všechny $a \in \Sigma$ a $q \in Q'$:
+        * pokud je $\delta(q, a)$ definováno, položíme $\delta'(q, a) \leftarrow \delta(q, a)$,
+        * pokud $\delta(q, a)$ není definováno (včetně přechodů ze stavu $q_\emptyset$), položíme $\delta'(q, a) \leftarrow q_\emptyset$.
+    3. Vrátíme $M'$.
 
 ### Nedeterministický konečný automat (NKA)
 
