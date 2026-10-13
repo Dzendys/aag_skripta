@@ -25,8 +25,8 @@
 
     *   $Q$ je konečná neprázdná množina stavů,
     *   $\Sigma$ je konečná neprázdná vstupní abeceda,
-    *   $G$ je konečná **abeceda zásobníku**,
-    *   $\delta$ je přechodová funkce (zobrazení z $Q \times (\Sigma \cup \{\varepsilon\}) \times G^*$ do množiny konečných podmnožin množiny $Q \times G^*$),
+    *   $G$ je konečná neprázdná **abeceda zásobníku**,
+    *   $\delta$ je přechodová funkce (zobrazení z konečné podmnožiny $Q \times (\Sigma \cup \{\varepsilon\}) \times G^*$ do množiny konečných podmnožin $Q \times G^*$),
     *   $q_0 \in Q$ je počáteční stav,
     *   $Z_0 \in G$ je **počáteční symbol na zásobníku** (na počátku zásobník není prázdný),
     *   $F \subseteq Q$ je množina koncových stavů.
@@ -102,6 +102,23 @@ Konfigurace popisuje kompletní stav výpočtu v daném okamžiku.
     Kde $a \in \Sigma \cup \{\varepsilon\}, w \in \Sigma^*, \alpha, \beta, \gamma \in G^*$.
     
     *(Předpokládáme vrchol zásobníku vlevo).*
+
+<a id="theorem-za-invariance"></a>
+!!! Theorem "[Věta (Nezávislost výpočtu na spodku zásobníku)](#theorem-za-invariance)"
+
+    ### Vlastnost přechodů ZA {#theorem-za-invariance}
+
+    Nechť $P = (Q, \Sigma, G, \delta, q_0, Z_0, F)$ je zásobníkový automat. Pokud:
+
+    $$
+    (q, w, A) \vdash_P^n (q', \varepsilon, \varepsilon)
+    $$
+
+    pak pro libovolný symbol $A \in G$ a libovolný řetězec $\alpha \in G^*$ platí:
+
+    $$
+    (q, w, A\alpha) \vdash_P^n (q', \varepsilon, \alpha)
+    $$
 
 ### Deterministický vs. Nedeterministický ZA
 
