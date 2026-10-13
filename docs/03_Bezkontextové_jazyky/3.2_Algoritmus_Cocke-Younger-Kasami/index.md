@@ -37,6 +37,19 @@
     !!! Warning "Orientace tabulky"
         V této metodě se tabulka vyplňuje zleva do prava. Jiná metoda může tabulku libovolně otočit a vyplňovat tudíž jiným směrem.
 
+<a id="theorem-cyk-complexity"></a>
+!!! Theorem "[Věta (Časová složitost algoritmu CYK)](#theorem-cyk-complexity)"
+
+    ### Časová složitost CYK {#theorem-cyk-complexity}
+
+    Pro každou bezkontextovou gramatiku $G = (N, \Sigma, P, S)$ v Chomského normálním tvaru rozhodne algoritmus Cocke-Younger-Kasami pro vstupní řetězec $x \in \Sigma^*$ délky $n = |x|$ v čase:
+
+    $$
+    \mathcal{O}(n^3)
+    $$
+
+    zda $x \in L(G)$.
+
 ---
 
 *Příklad:*
